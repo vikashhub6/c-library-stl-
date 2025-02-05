@@ -1,0 +1,74 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include<vector>
+//stl c++ library
+using namespace std ; 
+int main() {
+//  vector<int>v1;
+// for (int i = 0 ; i < 5 ; i++)
+//  { v1.push_back(i);// istead of push back we can use //emplace_back
+    
+//  }
+//  v1.pop_back();
+//  cout << "last_term"<< v1.back()<<endl;
+//  cout << "front_term"<< v1.front()<<endl;
+ 
+ 
+//  cout << size(v1)<<endl;
+ //  cout << v1.capacity()<<endl;
+// vector<int>v2(3,2);
+// cout << "last term"<< v2.back()<<endl; 
+// cout << "size"<< v2.size()<<endl;
+// cout << "capacit"<< v2.capacity()<<endl;
+
+// v2.push_back(5);
+// v2.push_back(6);
+// cout << "last term"<< v2.back()<<endl; 
+// cout << "size"<< v2.size()<<endl;
+// cout << "capacit"<< v2.capacity()<<endl;
+// // bro tora galat samj liya tha m actually  size ke baad bla //term sara size m daal deta h ho value initiaaly .
+vector<int>v3={1,3,4,5,6,7,8,9};
+//vector<int>v4(v3);
+//cout<< "first term"<< v4.front()<<endl;
+//cout << " last term "<< v4.back()<<endl;
+
+// erase is use for erasing from particular place or range.
+//v3.erase(v3.begin()+1, v3.begin()+6);// first one included and second one not included.
+//for ( int c = 0 ; c < 3; c++)
+ //{ cout << v3[c]<< " " ;
+    
+//}
+// size get change by applying erase and clear function by capacity remain intact.
+//v3.insert(v3.begin()+1,23);
+//cout << v3[1];
+//to clear all we write claear function 
+ // v3.clear();// yaad rakna aak baat claer ho yha erase dono se sirf siezze kaam hota h capactiy ka kucha nahi hoat h.
+  
+  //cout << "is empty"<< v3.empty();// empty is function which return 1 or 0 for having hempty or not .
+  
+// iterator ko pointer kintara samjo extacly same nhi hota h par question ko easy samjne ke liye maan skte h kin same h dono 
+// wose koi chiiz ko excess krne k 3 tarika h  index , //pointer and pointer like iteratotr  vector m
+// cout << v3.at(2) << endl;
+ //cout << *(v3.begin()+2  )  << endl; // iterator ke yaad krne k liye //raak skte h ki begin kar ke jo index par jana h uske //add kar do .aslayat m 
+ //int array [3]={1,3,6};
+  //cout <<* (array+1) ;// isko bolte h jado actucally array bi aak pointer h jo index o ka ddres lke beta h .
+// same result deta h iterator or pointer  jaab taak baat //array or vector ka 
+// vector .begin se first index par jate h paar uyaad rakna //vector.end se last index par nhi balki last ke baad bla //m jate h jiska acces krne se ganta nhi kuch milega 
+//cout << *(v3.end())<< endl; // unfortuently it will give garbage value .its not giving last value 
+// deko iterator ka type h vector.begin(), vector.end() ;
+//bnato kyu h iterator taki new concept of loop laya ja other //then for and while .
+//vector<int>::iterator it ;// introducing iterator 
+//it is like i of loop
+//for(it= v3.begin(); it!= v3.end();it++)
+//{
+// cout << *it << " "  << endl;// *(it) ye bi chelga
+//}// iterator kaam wohi krta h jo normal loop krta h par tarika tora causal h 
+// reverse iterator 
+// now auto it is use in place of declartion of iterato
+//for(auto it = v3.rbegin();it!=v3.rend(); it++)
+//{
+  //  cout << *it<< " " ;
+//}
+
+    return 0;
+}
