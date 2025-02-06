@@ -1,0 +1,20 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include<list>
+using namespace std ;
+
+int main() {
+  // list 
+  list<int>l;
+  l.push_back(3);
+  l.push_front(7);
+ l.emplace_back(8); // doubly linked list
+  for(auto a:l) // auto matlab samj jega ki kyaa rakna h //variable a ke andar
+   {
+       cout <<  a << " ";
+   }
+  
+// size , erase ,clear , begin , end , rbegin , rend,insert,front,back everthing apply here
+
+    return 0;
+}
