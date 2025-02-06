@@ -1,0 +1,25 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include<stack>
+using namespace std ;
+int main() {
+    stack<int>s;
+    
+    // yha par sirf push hota h pish _back nhi;
+     s.push(7);
+     s.emplace(8);
+     s.push(0);
+     s.push(9);
+     cout << s.top()<< endl;
+     s.pop();
+     cout << s.top();
+    //for(auto a:s) // while ata h stack que aur special que k //liye 
+    // auto apne aap samj jega ki kiya dalna h //int ki pair //string kii doble float kuch bi
+    while( !s.empty())
+     { 
+         cout<<s.top() ;
+         s.pop();
+         
+     }
+    return 0;
+}
