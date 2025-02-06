@@ -1,0 +1,26 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <vector> 
+using namespace std ;
+int main()
+//{ pair<string,int>p;
+//p.push_back({"vikash",2});
+//p.empalce_back("sohan",5);
+  //  for(auto a : p)
+    // { cout << a .front << " "<<a.back; 
+    //    
+    //}
+// pair ke andar ye push backa emplace back si chij nhi hotri //h kyu ki sirf isme akak hi element h n
+// pair is not a cpontainer it can stor only 1 value ;
+
+    vector<pair<string,int>>v1;  // pair is ike data type 
+    v1.push_back({"vikah", 34});
+    v1.emplace_back("sohan", 45);
+    for(auto d: v1 )
+     {
+        cout << d.first << " "<< d.second<< endl;
+        
+        
+    }
+    return 0;
+}
