@@ -1,0 +1,26 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include<list>
+#include<deque>
+using namespace std ;
+
+int main() {
+  // list 
+  deque<int>d;
+  d.push_back(3);
+  d.push_front(7);
+ d.emplace_back(8); // doubly linked list
+  for(auto a:d) // auto matlab samj jega ki kyaa rakna h //variable a ke andar
+   {
+       cout <<  a << " ";
+   }
+  
+  // diffremce in list and deque 
+ // as deque is internly made from so we can actually acces //the element like an array but cant do in list ,
+ 
+ cout <<d[2]; // yahi chij list ke sth nhi kar skte h 
+// size
+//, erase ,clear , begin , end , rbegin , rend,insert,front,back everthing apply here
+
+    return 0;
+}
